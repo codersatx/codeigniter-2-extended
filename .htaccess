@@ -1,0 +1,9 @@
+RewriteEngine on
+
+## 301 Redirect for incoming "http://site.com" requests
+## RewriteCond %{HTTP_HOST} ^site.com
+## RewriteRule (.*) http://www.site.com/$1 [R=301,L]
+
+## Rewrites for CodeIgniter
+RewriteCond $1 !^(index\.php|sitemap\.xml|robots\.txt|user_guide|public|cache|favicon\.ico|LiveSearchSiteAuth\.xml)
+RewriteRule ^(.*)$ /index.php/$1 [L]

@@ -1,0 +1,89 @@
+<!--
+
+Available Actions: create_table, drop_table, add_column, remove_column
+
+Example: "create_table"
+
+<migration>
+	<name>Create a table called job_tracking</name>
+	<tasks>
+		<task>
+			<action>create_table</action>
+			<table_name>job_tracking</table_name>
+			<fields>
+				
+				<field>
+					<name>job_id</name>
+					<type>integer</type>
+					<null>no</null>
+				</field>
+				
+				<field>
+					<name>job_location</name>
+					<type>string</type>
+					<null>no</null>
+					<default></default>
+				</field>
+				
+			</fields>
+		</task>
+	</tasks>
+</migration>
+
+Example: "drop_table"
+
+<migration>
+	<name>Drop table job_temp</name>
+	<task>
+		<action>drop_table</action>
+		<table_name>job_temp</table_name>
+	</task>
+</migration>
+
+Example: "add_column"
+
+<migration>
+	<name>Add column job_desc to jobs table</name>
+	<task>
+		<action>add_column</action>
+		<table_name>jobs</table_name>
+		
+		<field>
+			<name>job_desc</name>
+			<type>string</type>
+			<default></default>
+		</field>
+		
+	</task>
+</migration>
+
+Example: "remove_column"
+
+<migration>
+	<name>Remove column job_desc from jobs table</name>
+	<task>
+		<action>remove_column</action>
+		<table_name>jobs</table_name>
+		<field>
+			<name>job_desc</name>
+		</field>
+	</task>
+</migration>
+
+**************************************************************
+
+Migration options:
+- name - string value as a description of the migration
+- task/action - string - create_table/drop_table/add_column/remove_column
+- task/table_name - string value of table action is being executed against
+- task/field(s) - see description below and "create_table" example above
+								- you must include <fields> with child <field> tags when using "create_table"
+
+Field options:
+- name - string value of the name of the field
+- type - string/integer/boolean
+- null - yes/no
+- auto - yes/no
+- default - value to set as default for selected field
+
+-->

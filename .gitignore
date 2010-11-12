@@ -1,0 +1,5 @@
+system/cache/*
+.DS_Store
+application/config/database.php
+system/logs/*.php
+application/config/deploy.rb
