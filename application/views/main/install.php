@@ -1,6 +1,6 @@
 <?php $this->load->view('common/header', $this->data); ?>
 
-<h2>Install Codeigniter 2 - Tweaked</h2>
+<h2>Install Codeigniter 2 Extended</h2>
 <ul>
 	<li>Navigate to the application/config folder. Find and open the file "database.example.php".</li>
 	<li>Create a copy of "database.example.php" and name it "database.php".</li>

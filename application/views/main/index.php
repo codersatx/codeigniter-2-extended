@@ -9,12 +9,12 @@
 </ul>
 <p>My plan is to continue building on this base framework using my existing projects: (<a href="http://datedesinger.com">DateDesigner.com</a> &amp; <a href="http://lotdrifter.com">LotDrifter.com</a>).</p>
 <ul>
-	<li><strong><a href="/codeigniter-2-tweaked-roadmap" title="Codeigniter 2 Tweaked Roadmap">Codeigniter 2 Tweaked Roadmap</a></strong> - it's always good to have some clearly defined goals</li>
+	<li><strong><a href="/codeigniter-2-extended-roadmap" title="Codeigniter 2 Extended Roadmap">Codeigniter 2 Extended Roadmap</a></strong> - it's always good to have some clearly defined goals</li>
 </ul>
 
 <h2>Download/Installation</h2>
 <ul>
-	<li>Download <a href="https://github.com/beaufrusetta/codeigniter-2-tweaked" title="Codeigniter 2 Tweaked on GitHub">Codeigniter 2 Tweaked on GitHub</a></li>
+	<li>Download <a href="https://github.com/beaufrusetta/codeigniter-2-extended" title="Codeigniter 2 Extended on GitHub">Codeigniter 2 Extended on GitHub</a></li>
 	<li>Follow these <a href="/install" title="installation steps">installation steps</a></li>
 </ul>
 

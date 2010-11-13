@@ -47,7 +47,7 @@ $route['scaffolding_trigger'] = "";
 $route['codeigniter-2-modifications-additions'] = "main/ci2_mods_adds";
 $route['codeigniter-and-phake'] = "main/ci_and_phake";
 $route['codeigniter-and-capistrano'] = "main/ci_and_capistrano";
-$route['codeigniter-2-tweaked-roadmap'] = "main/ci2_tweaked_roadmap";
+$route['codeigniter-2-extended-roadmap'] = "main/ci2_extended_roadmap";
 $route['install'] = "main/install";
 
 /* End of file routes.php */

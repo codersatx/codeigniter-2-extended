@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title><?php if (!empty($page_title)) { echo $page_title; } else { echo 'Codeigniter 2.0 Installation - Tweaked'; } ?></title>
+	<title><?php if (!empty($page_title)) { echo $page_title; } else { echo 'Codeigniter 2 Extended'; } ?></title>
 	
 	<?php echo link_tag('/public/styles/application.css'); ?>
 	<?php echo link_tag('/public/styles/ui-lightness/jquery-ui-1.8.6.css'); ?>
@@ -19,7 +19,7 @@
 	<div id="masthead"> 
 		<table cellpadding="0" cellspacing="0" border="0" style="width:100%"> 
 			<tr> 
-				<td><h1>Codeigniter 2 Tweaked (Beta)</h1></td> 
+				<td><h1>Codeigniter 2 Extended (Beta)</h1></td> 
 			</tr> 
 		</table> 
 	</div> 
@@ -30,7 +30,7 @@
 		<tr> 
 			<td id="breadcrumb"> 
 				<a href="<?php echo base_url(); ?>">Project Home</a> &nbsp;&#8250;&nbsp;
-				<a href="https://github.com/beaufrusetta/codeigniter-2-tweaked">Codeigniter 2 Tweaked (GitHub)</a> &nbsp;&#8250;&nbsp;
+				<a href="https://github.com/beaufrusetta/codeigniter-2-extended">Codeigniter 2 Extended (GitHub)</a> &nbsp;&#8250;&nbsp;
 				<a href="http://beau.frusetta.com" title="PHP Web Developer Phoenix">Beau's Blog</a>
 			</td> 
 		</tr> 
