@@ -20,23 +20,4 @@
 <p>After a little bit of searching around the internet, I found <a href="https://github.com/jaz303/phake" title="jaz303's phake implementation" target="_blank">jaz303's "phake" implementation</a>.</p>
 <p>Pretty standard stuff - you have a "Phakefile" that sits in the root of your project, you install the library (its included as a part of the <a href="/install">installation</a>), map your PATH, and you're off! If you look at the "Phakefile" in the root directory of this project, you'll see how easy it is to setup and work with it. There are also quite a few examples listed in the readme on the github page for phake.</p>
 
-<?php if (base_url() != "http://localhost:8888/") { ?>
-<div class="disqus-wrapper">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	  /**
-	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-	    */
-	  (function() {
-	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	   var disqus_identifier = "codeigniter-and-phake";
-	   dsq.src = 'http://codeigniter2tweaked.disqus.com/embed.js';
-	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	  })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=codeigniter2tweaked">comments powered by Disqus.</a></noscript>
-	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-<?php } ?>
-
 <?php $this->load->view('common/footer', $this->data); ?>

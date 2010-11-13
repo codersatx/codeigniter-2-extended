@@ -52,23 +52,4 @@
 	<li>You should be all good to go at this point, however, if you aren't, then leave me some comments below.</li>
 </ul>
 
-<?php if (base_url() != "http://localhost:8888/") { ?>
-<div class="disqus-wrapper">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	  /**
-	    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-	    */
-	  (function() {
-	   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	   var disqus_identifier = "codeigniter-and-capistrano";
-	   dsq.src = 'http://codeigniter2tweaked.disqus.com/embed.js';
-	   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	  })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=codeigniter2tweaked">comments powered by Disqus.</a></noscript>
-	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-<?php } ?>
-
 <?php $this->load->view('common/footer', $this->data); ?>
