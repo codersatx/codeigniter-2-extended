@@ -22,26 +22,5 @@
 		});
 		
 	});
-	
-	## Model
-	group('model', function() {
-		
-		desc('Create new model class & migration');
-		task('create', function() {
-			include_once('external.php');
-			## Nothing to do just yet
-		});
-		
-	});
-	
-	## Testing
-	group('testing', function() {
-		
-		desc('basic test task');
-		task('run', function() {
-			include_once('external.php');
-		});
-		
-	});
 
 ?>
