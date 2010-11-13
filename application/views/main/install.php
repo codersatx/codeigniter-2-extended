@@ -12,6 +12,7 @@
 			$db['default']['password'] = "";<br />
 			$db['default']['database'] = "";
 		</code>
+		<strong>Tip:</strong> if you aren't going to utilize a database, just create a blank database.php file with opening/closing PHP tags.
 	</li>
 	<li>
 		Open the file "autoload.php" and modify the "libraries" section:
