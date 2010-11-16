@@ -50,6 +50,32 @@ class Migration {
 	}
 	
 	/**
+	 * This function creates the database listed in application/config/database.php. If the database exists, a value of FALSE will be returned, 
+	 * otherwise a value of TRUE will be returned on success.
+	 *
+	 * @return boolean
+	 * @access public
+	 */
+	public function create_database()
+	{
+		$CI =& get_instance();
+		$CI->load->dbforge();
+		$CI->load->dbutil();
+		
+		## Try to create the database, if it already exists, dbforge() will return FALSE
+		if (!$CI->dbutil->database_exists($CI->db->database)) {
+			if ($CI->dbforge->create_database($CI->db->database)) {
+				$this->_show_message("Database '".$CI->db->database."' created successfully.");
+			} else {
+				$this->_show_message("Database '".$CI->db->database."' did not create successfully. Please check your config values in application/config/database.php.");
+			}
+		} else {
+			$this->_show_message("Database '".$CI->db->database."' already exists.");
+			return FALSE;
+		}
+	}
+	
+	/**
 	 * This function runs all database migrations that haven't been run against 
 	 * the database specified in application/config/database.php. A record of 
 	 * migrations that have been applied are placed in to the schema_migrations 
