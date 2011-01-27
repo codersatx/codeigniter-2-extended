@@ -39,7 +39,7 @@
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('migration');
+$autoload['libraries'] = array('migration', 'database');
 
 /*
 | -------------------------------------------------------------------

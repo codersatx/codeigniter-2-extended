@@ -29,4 +29,26 @@
 		
 	});
 	
+	group('system', function() {
+	
+		desc('Install the example.');
+		task('install', function() {
+			include_once('external.php');
+			include_once('examples/model_test/install.php');
+		});
+		
+		desc('Uninstall the example.');
+		task('uninstall', function() {
+			include_once('external.php');
+			include_once('examples/model_test/uninstall.php');
+		});
+		
+		desc('Run the example.');
+		task('run', function() {
+			include_once('external.php');
+			include_once('examples/model_test/run.php');
+		});
+		
+	});
+	
 ?>
